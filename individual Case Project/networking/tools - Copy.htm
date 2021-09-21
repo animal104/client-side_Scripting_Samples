@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+   <!--
+      SDEV 250 Client-Side Scripting
+      "Hacker-Space" version 1.0
+      Author: Michael A Saine II
+      Date:  14 Feburary 2021 
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hacker-Space</title>
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="../style-sheet.css" />
+
+   <!--[if lt IE 9]>
+      <link rel="stylesheet" href="style-sheet.css" />
+   <![endif]-->
+   <script src="../modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1 style="color:#000000">
+            <a href="../index.htm"><img src="https://msaine.s3.amazonaws.com/SDEV+250/individual+Case+Project/Images/anonymouse_by_anonymous25-d9vbx7j.png" width="150" height="120" alt="H-S" title="" id="logo1" />
+            Hacker-Space
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="../index.htm">HOME</a></li>
+            <li><a href="../tools.htm">TOOLS</a></li>
+            <li><a href="../aboutus.htm">ABOUT US</a></li>
+            <li><a href="../links.htm">LINKS</a></li>
+         </ul>
+      </nav>
+        
+      <aside>
+         <ul>
+			<li>NETWORKING</li>
+            <li><a href="networking.htm">WELCOME</a></li>
+            <li><a href="history.htm">HISTORY</a></li>
+            <li><a href="networkbasics.htm">NETWORK BASICS</a></li>
+			<li><a href="cisconetworking.htm">CISCO NETWORKING</a></li>
+			<li><a href="certification.htm">CERTIFICATION</a></li>
+			<li><a href="tools.htm">TOOLS</a></li>
+			<li><a href="links.htm">LINKS</a></li>
+			<li><a href="faq.htm">FAQ</a></li>
+         </ul>
+      </aside>
+      
+   <article>
+      <h2>Book Your Ticket</h2>
+      <section id="ticket">
+         <h3>Ticket Details</h3>
+         <div id="passengersSection">
+            <h4>Passengers</h4>
+            <ul id="passengers"></ul>
+         </div>
+         <div id="dateSection">
+            <h4>Date</h4>
+            <p id="selectedDate"></p>
+         </div>
+         <div id="countdownSection">
+            <h4>Countdown to launch</h4>
+            <p id="countdown"></p>
+         </div>
+      </section>
+      <form>
+         <fieldset class="text">
+            <legend>Add Passengers</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" />
+            <input type="button" value="Add" id="addName" />
+         </fieldset>
+         <fieldset>
+			<br>
+			<br>
+            <legend>Pick a date</legend>
+            <input type="text" id="tripDate" />
+         </fieldset>
+
+      </form>
+      <div id="cal">
+         <div id="prev">&lt; previous</div>
+         <div id="next">next &gt;</div>
+         <table>
+            <caption></caption>
+            <tr>
+               <th>Sun</th>
+               <th>Mon</th>
+               <th>Tue</th>
+               <th>Wed</th>
+               <th>Thu</th>
+               <th>Fri</th>
+               <th>Sat</th>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </table>
+		 
+         <p id="close">close <span>&#9746;</span></p>
+      </div>
+   </article>
+      <footer>
+         <p>&#169; 2021 M. Saine II <br>
+		 Please Don't Steal This, It's All that I have!</p>
+      </footer>
+   <script src="orbits.js"></script>
+</body>
+</html>

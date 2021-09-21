@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+   <!--
+      SDEV 250 Client-Side Scripting
+      "Hacker-Space" version 1.0
+      Author: Michael A Saine II
+      Date:  14 Feburary 2021 
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hacker-Space</title>
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="../style-sheet.css" />
+   <!--[if lt IE 9]>
+      <link rel="stylesheet" href="style-sheet.css" />
+   <![endif]-->
+   <script src="../modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1 style="color:#000000">
+            <a href="../index.htm"><img src="https://msaine.s3.amazonaws.com/SDEV+250/individual+Case+Project/Images/anonymouse_by_anonymous25-d9vbx7j.png" width="150" height="120" alt="H-S" title="" id="logo1" />
+            Hacker-Space
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="../index.htm">HOME</a></li>
+            <li><a href="../tools.htm">TOOLS</a></li>
+            <li><a href="../aboutus.htm">ABOUT US</a></li>
+            <li><a href="../links.htm">LINKS</a></li>
+         </ul>
+      </nav>
+        
+      <aside>
+         <ul>
+			<li>NETWORKING</li>
+            <li><a href="networking.htm">WELCOME</a></li>
+            <li><a href="history.htm">HISTORY</a></li>
+            <li><a href="networkbasics.htm">NETWORK BASICS</a></li>
+			<li><a href="cisconetworking.htm">CISCO NETWORKING</a></li>
+			<li><a href="certification.htm">CERTIFICATION</a></li>
+			<li><a href="tools.htm">TOOLS</a></li>
+			<li><a href="links.htm">LINKS</a></li>
+			<li><a href="faq.htm">FAQ</a></li>
+         </ul>
+      </aside>
+    
+      <article>
+	  	<form name="form1" action="#">
+		<fieldset id="networktools">
+         <figure>
+			<br>
+			<br>
+			<h1 align="center" style="color: #42a600"><b> NETWORKING TOOLS</b></h1>
+		  <h5 align = "left" style="color: #42a600"> There are a lot of Binary mathematical tools in computer networking. A majority of these mathematical 
+			principles will become easy and apparent for you as you move through, but use these tools to get started understanding the ideals behind the concept are.
+			For example, pick a number. Convert it. Type it in and then convert it. See if you got it right.</h5>			
+			<br><br>
+			
+
+		
+          <label for="binaryconvert">
+            <h3 align="center" style="color: #42a600"><b> CONVERT TO BINARY </b></h3>
+			<h3 align="center" style="color: #42a600"><b> --------------------------------------------------------- </b></h3>
+
+		  <h3 align = "left" style="color: #42a600"> The first and most important tool that any future hacker can learn is 
+			the conversion process from a raw number (such as 14) into a binary digit that is cable of being transmitted to a 
+			computer in 1's and 0's as discussed in the system building section.</h3>
+			<br><br>
+			<input type="number" name="number" id="number">
+			<input type="button" value="engage" onclick="decimal()">
+          </label>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  
+		 <label for="ipclassdetermination">
+		 <h3 align="center" style="color: #42a600"><b> IPv4 Address Validation </b></h3>
+		 <h3 align="center" style="color: #42a600"><b> --------------------------------------------------------- </b></h3>
+			<br><br>
+		  <h3 align = "left" style="color: #42a600"> Another helpful tool that will guide the individual is one used to determine whether
+			or not the IP Address is valid or not. So take a moment, type in an IP Address and see whether or not the system sees it as valid.</h3> <br><br>
+			<input type="text" name="ipadd" id = "ipadd">
+			<input type="button" value="engage" onclick="validateip(document.form1.ipadd)"/>
+          </label>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  
+		 <label for="superfliousCountdown">
+		 <h3 align="center" style="color: #42a600"><b> Superflious Countdown </b></h3>
+		 <h3 align="center" style="color: #42a600"><b> --------------------------------------------------------- </b></h3>
+		  <br>
+		  <h3 align = "left" style="color: #42a600"> This testing tool is being devoloped to add to my project for grading and will be removed after the class</h3> <br><br>
+			<input type="text" name="tripDate" id = "tripDate">
+			<input type="button" value="engage" id="tripDate"/>
+          </label>
+		  <br>
+		  <br>
+  		  <br>
+		  <br>
+		  
+
+
+       </figure>
+      </article>
+	  
+        
+ </div>
+      </section>
+	  </article>
+    
+      <footer>
+         <p>&#169; 2021 M. Saine II <br>
+		 Please Don't Steal This, It's All that I have!</p>
+      </footer>
+	  
+   </div>
+  	<script>  
+	  function decimal(){
+		var decimal=document.getElementById("number").value;
+		var tempdecimal,rem,binary = 0,place =1;
+		tempdecimal=decimal;
+		
+		while(tempdecimal>0){
+			rem=tempdecimal%2;
+			binary=binary+(rem*place);
+			tempdecimal=parseInt(tempdecimal/2);
+			place=place*10;
+		}
+		alert(binary);	
+	}  
+	</script>
+
+	<script>
+	function validateip(inputText){
+		var format = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+		
+		if(inputText.value.match(format))
+		{
+		document.form1.ipadd.focus();
+		alert("You have entered a valid IP Address!");
+		}
+		else
+		{
+		alert("You have entered an invalid IP address!");
+	}
+ }
+ 
+ 	function validateip(inputText){
+		var format = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+		
+		if(inputText.value.match(format))
+		{
+		document.form1.ipadd.focus();
+		alert("You have entered a valid IP Address!");
+		}
+		else
+		{
+		alert("You have entered an invalid IP address!");
+	}
+ }
+
+  </script> 
+</body>
+</html>

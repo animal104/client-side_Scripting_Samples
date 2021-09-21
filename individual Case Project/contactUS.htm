@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head>
+   <!--
+      SDEV 250 Client-Side Scripting
+      "HackerSpace" version 1.0
+      Author: Michael A Saine II
+      Date:  28 February 2021 
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>HackerSpace</title>
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="style-sheet.css" />
+   <!--[if lt IE 9]>
+      <link rel="stylesheet" href="style-sheet.css" />
+   <![endif]-->
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1 style="color:#000000">
+            <a href="index.htm"><img src="https://msaine.s3.amazonaws.com/SDEV+250/individual+Case+Project/Images/anonymouse_by_anonymous25-d9vbx7j.png" width="150" height="120" alt="H-S" title="" id="logo1" />
+            Hacker-Space
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="index.htm">HOME</a></li>
+            <li><a href="aboutus.htm">ABOUT US</a></li>
+            <li><a href="securityWarning.htm">A QUICK NOTE</a></li>
+            <li><a href="contactUS.htm">CONTACT US</a></li>
+            <li><a href="links.htm">LINKS</a></li>
+         </ul>
+      </nav>
+        
+      <aside>
+         <ul>
+            <li><a href="systembuilding/systembuilding.htm">SYSTEM BUILDING</a></li>
+            <li><a href="networking/networking.htm">NETWORKING</a></li>
+            <li><a href="enterprisecomputing/enterprisecomputing.htm">ENTERPRISE COMPUTING</a></li>
+			<li><a href="databasemanagement/databasemanagement.htm">DATABASE MANAGEMENT</a></li>
+			<li><a href="softwaredevelopment/softwaredevelopment.htm">SOFTWARE DEVELOPMENT</a></li>
+			<li><a href="hacking/hacking.htm">CYBERSECURITY</a></li>
+         </ul>
+      </aside>
+
+      
+      <article>
+         <figure>
+			<br>
+			<br>
+			<h1 align="center" style="color: #42a600"><b> Contact Us!</b> </h1>			
+			<br>
+			<br>
+			
+			<body>  
+
+			<h3 style="color: #42a600"> <em> Please feel free to use this form to contact us for  your opinions, suggestions, or just questions. <br> <br> Emails will be read, BUT we can't guarantee that they will be responded too. HOWEVER, your constructive criticism will make this website stronger and a better 
+			resource for others around you. </em></h3>
+			<br> 
+			<br>
+			
+         <form action="results.htm" >
+
+            <label for="uname" style="color: #42a600">Name</label>
+            <input type="text" id="name" />
+            <p id="usernameError" class="errorMsg" style="color: #42a600"></p>
+
+			<br>			
+			<br>
+            <label for="email" style="color: #42a600">Email Address</label>
+            <input type="email" id="email" />
+            <p id="emailError" class="errorMsg" style="color: #42a600"></p>
+
+			<br>
+			<br>
+			<fieldset class="checks">
+				   <legend><span style="color: #42a600">Which Part of the Site do you have a suggestion for:</span></legend>
+				   <br>
+				   <input type="checkbox" id="mainSite" name="HackerSpace" value="mainSite" />
+				   <label for="mainSite" style="color: #42a600">Main Site</label>	
+				   
+				   <input type="checkbox" id="systemBuilding" name="HackerSpace" value="systemBuilding" />
+				   <label for="systemBuilding" style="color: #42a600">System Building</label>
+				   
+				   <input type="checkbox" id="networking" name="HackerSpace" value="networking" />
+				   <label for="networking" style="color: #42a600">Networking</label>	
+				   
+				   <input type="checkbox" id="enterpriseComputing" name="HackerSpace" value="enterpriseComputing" />
+				   <label for="enterpriseComputing" style="color: #42a600">Enterprise Computing</label>
+				   <br>
+				   
+				   <input type="checkbox" id="databaseManagement" name="HackerSpace"" value="databaseManagement" />
+				   <label for="databaseManagement" style="color: #42a600">Database Management</label>	
+				   
+				   <input type="checkbox" id="softwareDevelopment" name="HackerSpace" value="softwareDevelopment" />
+				   <label for="softwareDevelopment" style="color: #42a600">Software Development</label>	
+				   
+				   <input type="checkbox" id="Cybersecurity" name="HackerSpace" value="Cybersecurity" />
+				   <label for="Cybersecurity" style="color: #42a600">Cybersecurity</label>
+			
+			<br>
+			<br>
+			<fieldset class="checks">
+			<br>			
+			
+               <legend><span style="color: #42a600">Experience Level</span></legend>			   
+               <input type="radio" name="experienceLevel" id="novice" value="novice" />
+               <label for="novice" style="color: #42a600">Novice</label>			   
+               <input type="radio" name="experienceLevel" id="intermediateProfessional" value="intermediateProfessional" />
+               <label for="intermediateProfessional" style="color: #42a600">Intermediate/Professional</label>			   
+               <input type="radio" name="experienceLevel" id="master" value="master" />
+               <label for="master" style="color: #42a600">Master</label>
+
+			<br>
+			<br>			
+
+               <legend><span style="color: #42a600"><b>Your Comments:</b></span></legend>
+               <textarea type="text" id="comments" name="comments" rows="7" cols = "85" > </textarea>
+
+						
+			<input type="submit" value="Submit" id="submitButton" />
+			<br>
+			<br>
+			<br>
+			<br>
+			
+         </form>
+    </figure>
+</article>
+      <footer>
+         <p>&#169; 2021 M. Saine II <br>
+		 Please Don't Steal This, It's All that I have!</p>
+      </footer>
+<script src="contactus.js"></script>
+</body>
+</html>
